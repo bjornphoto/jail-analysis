@@ -4,7 +4,7 @@
 
 date <- read.csv("http://cookcountyjail.recoveredfactory.net/api/1.0/courtdate/?format=csv&limit=1000")
 
-people <- read.csv("http://cookcountyjail.recoveredfactory.net/api/1.0/countyinmate/?format=csv&limit=0")
+people <- read.csv("http://cookcountyjail.recoveredfactory.net/api/1.0/countyinmate/?format=csv")
 
 court_data <- merge(people, date, by.x="jail_id", by.y="inmate_jail_id")
 
